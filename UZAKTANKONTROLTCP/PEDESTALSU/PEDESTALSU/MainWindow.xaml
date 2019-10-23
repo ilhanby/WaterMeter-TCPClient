@@ -1,0 +1,170 @@
+﻿<Controls:MetroWindow x:Class="PEDESTALSU.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PEDESTALSU"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+        BorderThickness="1.5" 
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        WindowStartupLocation="CenterScreen" WindowTransitionsEnabled="True" 
+        Title="PEDESTAL" Height="550" Width="800" Loaded="MetroWindow_Loaded" ResizeMode="CanResizeWithGrip">
+    <Grid>
+        <TabControl Controls:TabControlHelper.Transition="Down" SnapsToDevicePixels="True" Controls:TabControlHelper.Underlined="SelectedTabItem" Margin="5">
+            <Controls:MetroTabItem Header="  Genel Bilgiler  " Controls:ControlsHelper.HeaderFontSize="19">
+                <Grid Margin="0,5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <TextBox x:Name="txtIP" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark=" IP NUMARASINI GİRİNİZ ..." HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,15,50,0" Width="200" />
+                        <Button x:Name="bagla" Background="{DynamicResource AccentBaseColorBrush}" Content="BAĞLAN" Foreground="White" Controls:ButtonHelper.CornerRadius="10" Controls:ButtonHelper.PreserveTextCase="True" Margin="0,50,10,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="100" Click="bagla_Click"/>
+                        <Button x:Name="baglankes" IsEnabled="False" Background="Red" Content="BAĞLANTI KES" Foreground="White" Controls:ButtonHelper.CornerRadius="10" Controls:ButtonHelper.PreserveTextCase="True" Margin="0,50,50,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Click="baglankes_Click"/>
+                        <TextBox x:Name="txtKomutCihazNo" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark=" SERİ NUMARASINI GİRİNİZ ..." HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,60" Width="200"/>
+                        <TextBox x:Name="txtKomutYukKrd"  Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark=" KREDİ MİKTARINI GİRİNİZ ..." HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,20" Width="200"/>
+                        <WrapPanel x:Name="btnwrap" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Vertical" >
+                            <Button x:Name="cmdOku" Background="{DynamicResource AccentBaseColorBrush}" Content="KISA OKUMA" Foreground="White" Controls:ButtonHelper.CornerRadius="10" Controls:ButtonHelper.PreserveTextCase="True" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" Click="cmdOku_Click"/>
+                            <Button x:Name="cmduzunoku" Background="{DynamicResource AccentBaseColorBrush}" Content="UZUN OKUMA" Foreground="White" Controls:ButtonHelper.CornerRadius="10" Controls:ButtonHelper.PreserveTextCase="True" Width="100" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Click="cmduzunoku_Click"/>
+                            <Button x:Name="kredi_yukle" Background="{DynamicResource AccentBaseColorBrush}" Content="KREDİ YÜKLE" Foreground="White" Controls:ButtonHelper.CornerRadius="10" Controls:ButtonHelper.PreserveTextCase="True" Width="100" HorizontalAlignment="Right" VerticalAlignment="Center" Click="kredi_yukle_Click"/>
+                            <Button x:Name="kredi_iade" Background="{DynamicResource AccentBaseColorBrush}" Content="KREDİ İADE" Foreground="White" Controls:ButtonHelper.CornerRadius="10" Controls:ButtonHelper.PreserveTextCase="True" Width="100" HorizontalAlignment="Right" VerticalAlignment="Center" Click="kredi_iade_Click"/>
+                            <Button x:Name="vana_ac" Background="{DynamicResource AccentBaseColorBrush}" Content="VANA AÇ" Foreground="White" Controls:ButtonHelper.CornerRadius="10" Controls:ButtonHelper.PreserveTextCase="True" Width="100" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Click="vana_ac_Click"/>
+                            <Button x:Name="vana_kapa" Background="{DynamicResource AccentBaseColorBrush}" Content="VANA KAPA" Foreground="White" Controls:ButtonHelper.CornerRadius="10" Controls:ButtonHelper.PreserveTextCase="True" Width="100" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Click="vana_kapa_Click"/>
+                            <Button x:Name="ekran" Background="{DynamicResource AccentBaseColorBrush}" Content="YENİLE" Foreground="White" Controls:ButtonHelper.CornerRadius="10" Controls:ButtonHelper.PreserveTextCase="True" Width="100" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Click="ekran_Click"/>
+                        </WrapPanel>
+                    </Grid>
+                    <Grid Grid.Column="1" Margin="5">
+                        <ListBox x:Name="loglst" BorderThickness="1" BorderBrush="{DynamicResource AccentBaseColorBrush}"/>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <TextBlock Text="CİHAZ NO :" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,20,240,0" FontSize="16"/>
+                        <TextBlock Text="TARİH :" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,60,240,0" FontSize="16"/>
+                        <TextBlock Text="SAAT NO :" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,100,240,0" FontSize="16"/>
+                        <TextBlock Text="KALAN KREDİ :" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,140,240,0" FontSize="16"/>
+                        <TextBlock Text="HARCANAN KREDİ :" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,180,240,0" FontSize="16"/>
+                        <TextBlock Text="MEKANİK :" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,220,240,0" FontSize="16"/>
+                        <TextBox x:Name="txtCihazNo" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="170,18,10,0" FontSize="16"/>
+                        <TextBox x:Name="txtTarih" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="170,58,10,0" FontSize="16"/>
+                        <TextBox x:Name="txtSaat" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="170,98,10,0" FontSize="16"/>
+                        <TextBox x:Name="txtKalanKredi" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="170,138,10,0" FontSize="16"/>
+                        <TextBox x:Name="txtHarcananKredi" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="170,178,10,0" FontSize="16"/>
+                        <TextBox x:Name="txtMekanik" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="170,218,10,0" FontSize="16"/>
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="1">
+                        <TextBlock Text="SAYAC TİP/ISSUE :" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,20,250,0" FontSize="16"/>
+                        <TextBlock Text="HAFTANIN GÜNÜ :" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,60,250,0" FontSize="16"/>
+                        <TextBlock Text="NOKTA SAYISI :" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,100,250,0" FontSize="16"/>
+                        <TextBlock Text="FLAG 0 / FLAG 2:" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,140,250,0" FontSize="16"/>
+                        <TextBlock Text="VANA DURUMU  :" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,200,250,0" FontSize="16"/>
+                        <TextBox x:Name="txtSayTip" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="150,18,130,0" FontSize="16"/>
+                        <TextBox x:Name="txtIssue" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="270,18,0,0" FontSize="16"/>
+                        <TextBox x:Name="txtHGun" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="150,58,10,0" FontSize="16"/>
+                        <TextBox x:Name="txtNoktaSayisi" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="150,98,130,0" FontSize="16"/>
+                        <TextBox x:Name="txtNSayisi" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="270,98,0,0" FontSize="16"/>
+                        <TextBox x:Name="txtFlag0" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="150,138,130,0" FontSize="16"/>
+                        <TextBox x:Name="txtFlag2" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="270,138,0,0" FontSize="16"/>
+                        <Ellipse x:Name="ellipse" Fill="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Height="45" Margin="20,190,0,15" Width="45" Stroke="Black" StrokeThickness="2"/>
+                        <TextBox x:Name="txtvandur" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="270,198,0,0" FontSize="16"/>
+                    </Grid>
+                </Grid>
+            </Controls:MetroTabItem>
+            <Controls:MetroTabItem Header="  Uzun Okuma Bilgileri  " Controls:ControlsHelper.HeaderFontSize="19" Margin="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <TextBlock Text="Cihaz NO :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,13,0,0" FontSize="12"/>
+                        <TextBlock Text="Kalan Kredi (krd) :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,39,240,0" FontSize="12"/>
+                        <TextBlock Text="Harcanan Kredi (krd) :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,65,240,0" FontSize="12"/>
+                        <TextBlock Text="Tüketim (lt) :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,91,240,0" FontSize="12"/>
+                        <TextBlock Text="Ters Tüketim (lt) :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,117,240,0" FontSize="12"/>
+                        <TextBlock Text="Kritik Kredi (lt) :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,143,240,0" FontSize="12"/>
+                        <TextBlock Text="Sayaçtaki Tarih :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,169,240,0" FontSize="12"/>
+                        <TextBlock Text="Haftanın Günü :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,195,240,0" FontSize="12"/>
+                        <TextBlock Text="Cezaya Düşme :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,221,240,0" FontSize="12"/>
+                        <TextBlock Text="Arızaya Düşme :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,247,240,0" FontSize="12"/>
+                        <TextBlock Text="Reset Tarihi :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,273,240,0" FontSize="12"/>
+                        <TextBlock Text="Vana Kapatma Tarihi :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,299,240,0" FontSize="12"/>
+                        <TextBlock Text="Vana Açma Tarihi :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,325,240,0" FontSize="12"/>
+                        <TextBlock Text="Vana Op. Sayısı :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,351,240,0" FontSize="12"/>
+                        <TextBlock Text="Per. Vana Saat/Gün :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,377,240,0" FontSize="12"/>
+                        <TextBlock Text="Ekran Ayar :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,403,240,0" FontSize="12"/>
+
+                        <TextBox x:Name="txtCNo" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="130,8,20,0" FontSize="11"/>
+                        <TextBox x:Name="txtKalan" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,34,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtHarcananKrd" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,60,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtHarcanan" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,86,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtHarcananTers" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,112,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtKritik" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,138,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtTarihSaat" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,164,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="Text2" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,190,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtCT" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,216,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtAT" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,242,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtResetT" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,268,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtVKT" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,294,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtVAT" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,320,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtVKSay" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,346,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="s" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Margin="130,372,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtPerVanaSaat" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Margin="130,372,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtPerVanaGun" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Center" Width="50" Margin="130,372,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtVanaPer" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Right" Width="50" Margin="130,372,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtEkran" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Margin="130,398,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="txtEkran1" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Center" Width="50" Margin="130,398,20,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <GroupBox Height="360" VerticalAlignment="Top">
+                            <Grid Margin="5,10">
+                                <TextBlock Text="Kredi Katsay 1 :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,5,0,0" FontSize="12"/>
+                                <TextBlock Text="Kredi Katsay 2 :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,31,0,0" FontSize="12"/>
+                                <TextBlock Text="Kredi Katsay 3 :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,57,0,0" FontSize="12"/>
+                                <TextBlock Text="Kredi Katsay 4 :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,83,0,0" FontSize="12"/>
+                                <TextBlock Text="Kademe 1 :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,109,0,0" FontSize="12"/>
+                                <TextBlock Text="Kademe 2 :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,135,0,0" FontSize="12"/>
+                                <TextBlock Text="Kademe 3 :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,161,0,0" FontSize="12"/>
+                                <TextBlock Text="Dönem :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,187,0,0" FontSize="12"/>
+                                <TextBlock Text="Dönem Haracanan :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,213,0,0" FontSize="12"/>
+                                <TextBlock Text="Dönem Tüketim :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,239,0,0" FontSize="12"/>
+                                <TextBlock Text="Dönem Gün :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,265,0,0" FontSize="12"/>
+                                <TextBlock Text="Aktif Kademe :" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,291,0,0" FontSize="12"/>
+
+                                <TextBox x:Name="txtKK11" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,0,130,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                                <TextBox x:Name="txtKK21" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,26,130,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                                <TextBox x:Name="txtKK31" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,52,130,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                                <TextBox x:Name="txtKK41" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,78,130,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                                <TextBox x:Name="txtKademe1" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,104,100,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                                <TextBox x:Name="txtKademe2" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,130,100,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                                <TextBox x:Name="txtKademe3" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,156,100,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                                <TextBox x:Name="txtDonem" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,182,100,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                                <TextBox x:Name="txtDonemHar" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,208,100,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                                <TextBox x:Name="txtDonemTuk" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,234,100,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                                <TextBox x:Name="txtDonemGun" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,260,100,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                                <TextBox x:Name="txtAKdm" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="130,286,100,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                            </Grid>
+                        </GroupBox>
+                        <TextBlock Text="G1 / 2:" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,0,90,83" FontSize="12"/>
+                        <TextBlock Text="PA / S :" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,0,90,57" FontSize="12"/>
+                        <TextBlock Text="Sayaç Nokta Sayısı :" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,0,90,31" FontSize="12"/>
+                        <TextBlock Text="Issue / ASev :" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,0,90,5" FontSize="12"/>
+
+                        <TextBox x:Name="lblG1" IsReadOnly="True" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="230,0,85,78" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="lblG2" IsReadOnly="True" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="305,0,10,78" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="lblPA" IsReadOnly="True" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="230,0,85,52" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="lblPS" IsReadOnly="True" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="305,0,10,52" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="lblN" IsReadOnly="True" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="230,0,85,26" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="lblNoktaS" IsReadOnly="True" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="305,0,10,26" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="lblIssue" IsReadOnly="True" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="230,0,85,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                        <TextBox x:Name="lblASEV" IsReadOnly="True" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="305,0,10,0" FontSize="11" HorizontalContentAlignment="Center"/>
+                    </Grid>
+                </Grid>
+            </Controls:MetroTabItem>
+        </TabControl>
+            
+    </Grid>
+</Controls:MetroWindow>

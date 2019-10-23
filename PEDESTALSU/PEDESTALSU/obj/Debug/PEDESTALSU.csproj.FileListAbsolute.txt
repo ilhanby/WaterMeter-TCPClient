@@ -1,0 +1,69 @@
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\bin\Debug\PEDESTALSU.exe.config
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\bin\Debug\PEDESTALSU.exe
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\bin\Debug\PEDESTALSU.pdb
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\bin\Debug\ControlzEx.dll
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\bin\Debug\MahApps.Metro.dll
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\bin\Debug\ControlzEx.pdb
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\bin\Debug\MahApps.Metro.pdb
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\bin\Debug\MahApps.Metro.xml
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\App.g.cs
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU_MarkupCompile.cache
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU_MarkupCompile.lref
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\App.baml
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\MainWindow.baml
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.g.resources
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.Properties.Resources.resources
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.csproj.CopyComplete
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.exe
+C:\Users\Asus\source\repos\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.pdb
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\bin\Debug\PEDESTALSU.exe.config
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\bin\Debug\PEDESTALSU.exe
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\bin\Debug\PEDESTALSU.pdb
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\bin\Debug\ControlzEx.dll
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\bin\Debug\MahApps.Metro.dll
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\bin\Debug\ControlzEx.pdb
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\bin\Debug\MahApps.Metro.pdb
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\bin\Debug\MahApps.Metro.xml
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\App.g.cs
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU_MarkupCompile.cache
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU_MarkupCompile.lref
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\App.baml
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\MainWindow.baml
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.g.resources
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.Properties.Resources.resources
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.csproj.CopyComplete
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.exe
+C:\Users\Asus\source\repos\PEDESTAL\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.pdb
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\bin\Debug\PEDESTALSU.exe.config
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\bin\Debug\PEDESTALSU.exe
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\bin\Debug\PEDESTALSU.pdb
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\bin\Debug\ControlzEx.dll
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\bin\Debug\MahApps.Metro.dll
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\bin\Debug\System.Windows.Interactivity.dll
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\bin\Debug\ControlzEx.pdb
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\bin\Debug\MahApps.Metro.pdb
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\bin\Debug\MahApps.Metro.xml
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.csprojAssemblyReference.cache
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\MainWindow.g.cs
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\App.g.cs
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU_MarkupCompile.cache
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU_MarkupCompile.lref
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\App.baml
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\MainWindow.baml
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.g.resources
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.Properties.Resources.resources
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.csproj.GenerateResource.cache
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.csproj.CoreCompileInputs.cache
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.csproj.CopyComplete
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.exe
+D:\ilhanby\Projects\VisualStudioProject\DataloggerPedestal\PEDESTAL SU SAYACI\PEDESTALSU\PEDESTALSU\obj\Debug\PEDESTALSU.pdb
